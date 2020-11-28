@@ -1,1 +1,1 @@
-# docker-manual
+# docker-wiki
