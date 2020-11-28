@@ -31,46 +31,46 @@ _docker run --name chronograf -p 8888:8888 chronograf_
 #### Comando:
 > docker stop $(docker ps -aq)
 
-## 6. Entrare in container in esecuzione
+### 6. Entrare in container in esecuzione
 #### Comando:
 > docker exec -it **_container_name_** bash
 
-## 7. Visualizzare l’output di un container
+### 7. Visualizzare l’output di un container
 #### Comando:
 > docker logs -f **_container_name_**
 
-## 8. Conoscere IP container
+### 8. Conoscere IP container
 #### Comando:
 > docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' **_container_name_**
 
-## 9. Eliminare immagine
+### 9. Eliminare immagine
 #### Comando:
 > docker rmi **_immagine_**
 
-## 10. Eliminare container
+### 10. Eliminare container
 #### Comando:
 > docker container rm **_container_**
 
-## 11. Loggare GiitHub con Docker
+### 11. Loggare GiitHub con Docker
 E’ necessario innanzitutto:
 Generare il token da GitHub
 Aprire in CLI la cartella in cui è contenuto il file .txt con il token GitHub
 #### Comando:
 > cat **_token_filename_**.txt | docker login docker.pkg.github.com -u **_GitHub_username_** --password-stdin
 
-## 12. Taggare immagine
+### 12. Taggare immagine
 #### Comando:
 > docker tag **_image_id_** **_image_name_**:**_version_**
 
-## 13. Pushare immagine
+### 13. Pushare immagine
 #### Comando:
 > docker push **_image_name_**:**_version_**
 
-## 14. Vedere tutte le immagini
+### 14. Vedere tutte le immagini
 #### Comando:
 > docker images
 
-## 15. Vedere tutti i containers
+### 15. Vedere tutti i containers
 #### Comando:
 > docker ps -a
 
