@@ -3,7 +3,7 @@ Comandi e funzionalità Docker
 
 ## Comandi
 
-### Creare un nuovo container
+### 1. Creare un nuovo container
 #### Esempio:
 
 _docker run --name chronograf -p 8888:8888 chronograf_
@@ -11,7 +11,7 @@ _docker run --name chronograf -p 8888:8888 chronograf_
 #### Comando:
 > docker run --name **_container-name/id_** -p **_container-port_**:**_host-port_** **_image-id_**
 
-### Creare container custom
+### 2. Creare container custom
 **docker-compose.yml**: Definisce i servizi (container che verranno creati)
 
 **Dockerfile**: usato per buildare un’immagine docker, definisce le dipendenze e quali comandi verranno eseguiti dal container.
@@ -19,10 +19,10 @@ _docker run --name chronograf -p 8888:8888 chronograf_
 #### Comando:
 > docker-compose up (-d per detached mode)
 
-### Far partire container esistente
+### 3. Far partire container esistente
 #### Comando:
 > docker start **_container-name_**
 
-### Fermare container
+### 4. Fermare container
 #### Comando:
 > docker stop **_container-name_**
