@@ -19,6 +19,10 @@ _docker run --name chronograf -p 8888:8888 chronograf_
 #### Comando:
 > docker-compose up (-d per detached mode)
 
+È possibile fermare i container creati con questo metodo con
+
+> docker-compose down
+
 ### 3. Far partire container esistente
 #### Comando:
 > docker start **_container-name_**
